@@ -68,11 +68,7 @@
             <nav class="navbar navbar-expand-lg">
               <div class="container-fluid">
                 <a class="navbar-brand" href="index.html">
-                  <img
-                    src="images/logo.jpg"
-                    alt="logo"
-                    class="img-fluid"
-                  />
+                  <img src="images/logo.jpg" alt="logo" class="img-fluid" />
                 </a>
                 <button
                   class="navbar-toggler"
@@ -159,7 +155,7 @@
             <div class="carousel-item active">
               <img
                 src="images/banner-1.webp"
-                class="d-block w-100"
+                class="d-block w-100 img-fluid"
                 alt="img"
               />
               <div class="overlay"></div>
@@ -180,7 +176,7 @@
             <div class="carousel-item">
               <img
                 src="images/banner-2.webp"
-                class="d-block w-100"
+                class="d-block w-100 img-fluid"
                 alt="img"
               />
               <div class="overlay"></div>
@@ -201,7 +197,7 @@
             <div class="carousel-item">
               <img
                 src="images/banner-3.webp"
-                class="d-block w-100"
+                class="d-block w-100 img-fluid"
                 alt="img"
               />
               <div class="overlay"></div>
@@ -241,7 +237,7 @@
 
       <section id="categories">
         <div class="container py-5">
-          <div class="row">
+          <div class="row row-gap-2">
             <div class="trending col-md-4">
               <div class="card text-bg-dark border-0 rounded-5">
                 <img
@@ -288,9 +284,591 @@
         </div>
       </section>
       <!-- end of categories -->
+
+      <section id="sneakers">
+        <div class="container">
+          <div class="row top-row mb-md-3 mb-lg-5">
+            <div class="col-12">
+              <p>The latest trends in athletic footwear</p>
+              <h2>Sneakers & Kicks</h2>
+            </div>
+          </div>
+
+          <div class="row">
+            <div class="col-12">
+              <!-- Nav tabs -->
+              <ul
+                class="nav nav-underline justify-content-center mb-3 mb-md-5"
+                id="myTab"
+                role="tablist"
+              >
+                <li class="nav-item" role="presentation">
+                  <button
+                    class="nav-link active"
+                    id="featured-tab"
+                    data-bs-toggle="tab"
+                    data-bs-target="#featured"
+                    type="button"
+                    role="tab"
+                    aria-controls="featured"
+                    aria-selected="true"
+                  >
+                    FEATURED
+                  </button>
+                </li>
+                <li class="nav-item" role="presentation">
+                  <button
+                    class="nav-link"
+                    id="arrivals-tab"
+                    data-bs-toggle="tab"
+                    data-bs-target="#arrivals"
+                    type="button"
+                    role="tab"
+                    aria-controls="arrivals"
+                    aria-selected="false"
+                  >
+                    NEW ARRIVALS
+                  </button>
+                </li>
+                <li class="nav-item" role="presentation">
+                  <button
+                    class="nav-link"
+                    id="seller-tab"
+                    data-bs-toggle="tab"
+                    data-bs-target="#seller"
+                    type="button"
+                    role="tab"
+                    aria-controls="seller"
+                    aria-selected="false"
+                  >
+                    BEST SELLER
+                  </button>
+                </li>
+              </ul>
+
+              <!-- Tab panes -->
+              <div class="tab-content">
+                <div
+                  class="tab-pane active"
+                  id="featured"
+                  role="tabpanel"
+                  aria-labelledby="featured-tab"
+                  tabindex="0"
+                >
+                  <div class="row">
+                    <div class="col-6 col-md-3">
+                      <div class="card border-0">
+                        <img
+                          src="images/featured-1.webp"
+                          class="card-img-top"
+                          alt="img"
+                        />
+                        <div class="card-body px-0">
+                          <p class="card-text">$25.00</p>
+                          <h5 class="card-title">
+                            Classic White Tennis Sneakers
+                          </h5>
+                          <p class="card-text sub-title">SportyFeet</p>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-6 col-md-3">
+                      <div class="card border-0">
+                        <img
+                          src="images/featured-2.webp"
+                          class="main card-img-top"
+                          alt="img"
+                        />
+                        <div class="card-body px-0">
+                          <p class="card-text">$25.00</p>
+                          <h5 class="card-title">Waterproof Hiking Boots</h5>
+                          <p class="card-text sub-title">TrailGear</p>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-6 col-md-3">
+                      <div class="card border-0">
+                        <img
+                          src="images/featured-3.webp"
+                          class="card-img-top"
+                          alt="img"
+                        />
+                        <div class="card-body px-0">
+                          <p class="card-text">$21.00</p>
+                          <h5 class="card-title">Classic Leather Sneakers</h5>
+                          <p class="card-text sub-title">UrbanStep</p>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-6 col-md-3">
+                      <div class="card border-0">
+                        <img
+                          src="images/featured-4.webp"
+                          class="card-img-top"
+                          alt="img"
+                        />
+                        <div class="card-body px-0">
+                          <p class="card-text">$25.00</p>
+                          <h5 class="card-title">High-Top Canvas Sneakers</h5>
+                          <p class="card-text sub-title">TrendyFeet</p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div
+                  class="tab-pane"
+                  id="arrivals"
+                  role="tabpanel"
+                  aria-labelledby="arrivals-tab"
+                  tabindex="0"
+                >
+                  <div class="row">
+                    <div class="col-6 col-md-3">
+                      <div class="card border-0">
+                        <img
+                          src="images/arrival-1.webp"
+                          class="card-img-top"
+                          alt="img"
+                        />
+                        <div class="card-body px-0">
+                          <p class="card-text">$25.00</p>
+                          <h5 class="card-title">Breathable Mesh Slip-Ons</h5>
+                          <p class="card-text sub-title">AirWalk</p>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-6 col-md-3">
+                      <div class="card border-0">
+                        <img
+                          src="images/arrival-2.webp"
+                          class="main card-img-top"
+                          alt="img"
+                        />
+                        <div class="card-body px-0">
+                          <p class="card-text">$25.00</p>
+                          <h5 class="card-title">
+                            Premium Leather Chelsea Boots
+                          </h5>
+                          <p class="card-text sub-title">LuxeFeet</p>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-6 col-md-3">
+                      <div class="card border-0">
+                        <img
+                          src="images/arrival-3.webp"
+                          class="card-img-top"
+                          alt="img"
+                        />
+                        <div class="card-body px-0">
+                          <p class="card-text">$21.00</p>
+                          <h5 class="card-title">Chunky Platform Sandals</h5>
+                          <p class="card-text sub-title">BoldWalks</p>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-6 col-md-3">
+                      <div class="card border-0">
+                        <img
+                          src="images/arrival-4.webp"
+                          class="card-img-top"
+                          alt="img"
+                        />
+                        <div class="card-body px-0">
+                          <p class="card-text">$25.00</p>
+                          <h5 class="card-title">Lightweight Running Shoes</h5>
+                          <p class="card-text sub-title">SprintMax</p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div
+                  class="tab-pane"
+                  id="seller"
+                  role="tabpanel"
+                  aria-labelledby="seller-tab"
+                  tabindex="0"
+                >
+                  <div class="row">
+                    <div class="col-6 col-md-3">
+                      <div class="card border-0">
+                        <img
+                          src="images/seller-1.webp"
+                          class="card-img-top"
+                          alt="img"
+                        />
+                        <div class="card-body px-0">
+                          <p class="card-text">$25.00</p>
+                          <h5 class="card-title">Wintage Suede Loafers</h5>
+                          <p class="card-text sub-title">RetroSole</p>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-6 col-md-3">
+                      <div class="card border-0">
+                        <img
+                          src="images/seller-2.webp"
+                          class="main card-img-top"
+                          alt="img"
+                        />
+                        <div class="card-body px-0">
+                          <p class="card-text">$25.00</p>
+                          <h5 class="card-title">Vegan Leather Combat Boots</h5>
+                          <p class="card-text sub-title">EcoStride</p>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-6 col-md-3">
+                      <div class="card border-0">
+                        <img
+                          src="images/featured-1.webp"
+                          class="card-img-top"
+                          alt="img"
+                        />
+                        <div class="card-body px-0">
+                          <p class="card-text">$25.00</p>
+                          <h5 class="card-title">
+                            Classic White Tennis Sneakers
+                          </h5>
+                          <p class="card-text sub-title">SportyFeet</p>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-6 col-md-3">
+                      <div class="card border-0">
+                        <img
+                          src="images/arrival-1.webp"
+                          class="card-img-top"
+                          alt="img"
+                        />
+                        <div class="card-body px-0">
+                          <p class="card-text">$25.00</p>
+                          <h5 class="card-title">Breathable Mesh Slip-Ons</h5>
+                          <p class="card-text sub-title">AirWalk</p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- end of sneakers -->
+
+      <section id="discover">
+        <div class="container-fluid p-0 wrapper">
+          <div class="card text-bg-dark border-0">
+            <img
+              src="images/discover-banner.webp"
+              class="card-img rounded-0"
+              alt="img"
+            />
+            <div class="card-img-overlay rounded-0">
+              <p class="card-text sub-title-1">COMFORT MEETS FASHION</p>
+              <h5 class="card-title">
+                Discover shoes that look great and feel even better
+              </h5>
+              <p class="card-text sub-title-2">
+                Our collection features comfortable and stylish footwear
+                designed to keep your feet happy all day long.
+              </p>
+              <a href="#" class="btn rounded-0 text-white"
+                >SHOP NOW <i class="fas fa-long-arrow-alt-right ms-3"></i
+              ></a>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- end of discover -->
+
+      <section id="scrolling-text">
+        <div class="container">
+          <div class="row text-center text-white">
+            <p class="col-12 m-0 p-2">
+              Enjoy 20% off your entire order with the code SHOEFRESH20.
+            </p>
+          </div>
+        </div>
+      </section>
+      <!-- end of scrolling-text -->
+
+      <section id="timeless">
+        <div class="container py-3 py-md-5">
+          <div class="row">
+            <div class="col-12 text-center">
+              <p class="sub-title-1">FASHION SNEAKERS</p>
+              <h3 class="title">Timeless styles for everyday wear</h3>
+              <p class="sub-title-2">
+                High-performance footwear for sports and workouts
+              </p>
+            </div>
+          </div>
+
+          <div class="row row-gap-4">
+            <div class="col-md-4">
+              <div class="card text-bg-dark">
+                <img src="images/timeless-1.webp" class="card-img" alt="img" />
+                <div class="card-img-overlay">
+                  <p class="card-text">COMFORT MEETS FASHION</p>
+                  <h5 class="card-title">Discover shoes that look great</h5>
+                  <a
+                    href="#"
+                    class="btn text-white p-0 border-white border-0 border-bottom rounded-0"
+                    >SHOP NOW</a
+                  >
+                </div>
+              </div>
+            </div>
+
+            <div class="col-md-4">
+              <div class="card text-bg-dark">
+                <img src="images/timeless-2.webp" class="card-img" alt="img" />
+                <div class="card-img-overlay">
+                  <p class="card-text">ELEVATE YOUR LOOK</p>
+                  <h5 class="card-title">Find the perfect pair of shoes</h5>
+                  <a
+                    href="#"
+                    class="btn text-white p-0 border-white border-0 border-bottom rounded-0"
+                    >SHOP NOW</a
+                  >
+                </div>
+              </div>
+            </div>
+
+            <div class="col-md-4">
+              <div class="card text-bg-dark">
+                <img src="images/timeless-3.webp" class="card-img" alt="img" />
+                <div class="card-img-overlay">
+                  <p class="card-text">STEP INTO STYLE</p>
+                  <h5 class="card-title">The latest trends in footwear</h5>
+                  <a
+                    href="#"
+                    class="btn text-white p-0 border-white border-0 border-bottom rounded-0"
+                    >SHOP NOW</a
+                  >
+                </div>
+              </div>
+            </div>
+
+            <div class="col-md-6">
+              <div class="card text-bg-dark">
+                <img src="images/timeless-4.webp" class="card-img" alt="img" />
+                <div class="card-img-overlay">
+                  <p class="card-text">SHOP BY BRAND</p>
+                  <h5 class="card-title">
+                    Find your favorite brands and styles
+                  </h5>
+                  <a
+                    href="#"
+                    class="btn text-white p-0 border-white border-0 border-bottom rounded-0"
+                    >SHOP NOW</a
+                  >
+                </div>
+              </div>
+            </div>
+
+            <div class="col-md-6">
+              <div class="card text-bg-dark">
+                <img src="images/timeless-5.webp" class="card-img" alt="img" />
+                <div class="card-img-overlay">
+                  <p class="card-text">SALE AND CLEARANCE</p>
+                  <h5 class="card-title">
+                    Shop our latest deals and discounts
+                  </h5>
+                  <a
+                    href="#"
+                    class="btn text-white p-0 border-white border-0 border-bottom rounded-0"
+                    >SHOP NOW</a
+                  >
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- end of timeless -->
+
+      <section id="feedback">
+        <div class="container py-3 py-md-5">
+          <div
+            class="row headings text-center justify-content-center mb-2 mb-md-4"
+          >
+            <h3>Customer Feedback Highlights</h3>
+            <p>
+              Laoreet ridiculus congue magna malesuada phasellus condimentum
+              taciti mus primis.
+            </p>
+          </div>
+
+          <div class="row logos row-gap-4 justify-content-center">
+            <div class="col-12 col-md-4 col-lg">
+              <div class="row row-gap-4">
+                <div class="col-6 col-lg-12 text-center">
+                  <img
+                    src="images/feedback-1.webp"
+                    class="img-fluid"
+                    alt="img"
+                  />
+                </div>
+                <div class="col-6 col-lg-12 text-center">
+                  <img
+                    src="images/feedback-2.webp"
+                    class="img-fluid"
+                    alt="img"
+                  />
+                </div>
+              </div>
+            </div>
+
+            <div class="col-12 col-md-4 col-lg">
+              <div class="row row-gap-4">
+                <div class="col-6 col-lg-12 text-center">
+                  <img
+                    src="images/feedback-3.webp"
+                    class="img-fluid"
+                    alt="img"
+                  />
+                </div>
+                <div class="col-6 col-lg-12 text-center">
+                  <img
+                    src="images/feedback-4.webp"
+                    class="img-fluid"
+                    alt="img"
+                  />
+                </div>
+              </div>
+            </div>
+
+            <div class="col-12 col-md-4 col-lg">
+              <div class="row row-gap-4">
+                <div class="col-6 col-lg-12 text-center">
+                  <img
+                    src="images/feedback-5.webp"
+                    class="img-fluid"
+                    alt="img"
+                  />
+                </div>
+                <div class="col-6 col-lg-12 text-center">
+                  <img
+                    src="images/feedback-6.webp"
+                    class="img-fluid"
+                    alt="img"
+                  />
+                </div>
+              </div>
+            </div>
+
+            <div class="col-12 col-md-4 col-lg">
+              <div class="row row-gap-4">
+                <div class="col-6 col-lg-12 text-center">
+                  <img
+                    src="images/feedback-7.webp"
+                    class="img-fluid"
+                    alt="img"
+                  />
+                </div>
+                <div class="col-6 col-lg-12 text-center">
+                  <img
+                    src="images/feedback-8.webp"
+                    class="img-fluid"
+                    alt="img"
+                  />
+                </div>
+              </div>
+            </div>
+
+            <div class="col-12 col-md-4 col-lg">
+              <div class="row row-gap-4">
+                <div class="col-6 col-lg-12 text-center">
+                  <img
+                    src="images/feedback-9.webp"
+                    class="img-fluid"
+                    alt="img"
+                  />
+                </div>
+                <div class="col-6 col-lg-12 text-center">
+                  <img
+                    src="images/feedback-10.webp"
+                    class="img-fluid"
+                    alt="img"
+                  />
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- end of feedback -->
     </main>
 
-    <footer></footer>
+    <footer class="pt-5">
+      <div class="container top-footer">
+        <div class="row text-center row-gap-2">
+          <div class="col-12 col-md">
+            <h3>INFORMATION</h3>
+            <ul type="none" class="p-0">
+              <li><a href="#">About Us</a></li>
+              <li><a href="#">Privacy Policy</a></li>
+              <li><a href="#">Returns Policy</a></li>
+              <li><a href="#">Shipping Policy</a></li>
+              <li><a href="#">Terms & Conditions</a></li>
+            </ul>
+          </div>
+          <div class="col-12 col-md">
+            <h3>QUICK LINKS</h3>
+            <ul type="none" class="p-0">
+              <li><a href="#">My Account</a></li>
+              <li><a href="#">My Cart</a></li>
+              <li><a href="#">Size Chart</a></li>
+              <li><a href="#">Wishlist</a></li>
+              <li><a href="#">Gift Card</a></li>
+            </ul>
+          </div>
+          <div class="col-12 col-md">
+            <div class="logo-wrapper mb-2 mb-md-4">
+              <img src="images/logo.jpg" class="img-fluid" alt="img" />
+            </div>
+            <div class="text-wrapper">
+              <p>T: + (08) 9055 0269</p>
+              <p>E: example@example.com</p>
+              <p>50 Porana Place, West Casuarinas,</p>
+              <p>Western Australia, Australia.</p>
+            </div>
+          </div>
+          <div class="col-12 col-md">
+            <h3>CATEGORIES</h3>
+            <ul type="none" class="p-0">
+              <li><a href="#">Athletic Footwear</a></li>
+              <li><a href="#">Boots for Every Occasion</a></li>
+              <li><a href="#">Luxury Leather Shoes</a></li>
+              <li><a href="#">Sandals & Slides</a></li>
+              <li><a href="#">Sneakerhead's Haven</a></li>
+            </ul>
+          </div>
+          <div class="col-12 col-md">
+            <h3>SUPPORT</h3>
+            <ul type="none" class="p-0">
+              <li><a href="#">Contact Us</a></li>
+              <li><a href="#">Newsletter</a></li>
+              <li><a href="#">Gift Cards</a></li>
+              <li><a href="#">Sign In</a></li>
+              <li><a href="#">My Account</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <div class="container-fluid py-3 bottom-footer border border-0 border-top">
+        <div class="row">
+          <div class="col-12 text-center">
+            Copyright © 2024 Shooz. All rights reserved
+          </div>
+        </div>
+      </div>
+    </footer>
 
     <script
       src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.6/dist/js/bootstrap.bundle.min.js"
