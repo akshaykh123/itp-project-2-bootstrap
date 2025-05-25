@@ -1,0 +1,25 @@
+/**********************
+      breadcrumb
+**********************/
+#breadcrumb a {
+  text-decoration: none;
+  color: #ffc000;
+}
+
+#product-container {
+  overflow: hidden;
+}
+
+/**********************
+    video-section
+**********************/
+#video-section video {
+  height: 500px;
+}
+
+/**********************
+      upgrade
+**********************/
+#upgrade .card-subtitle {
+  letter-spacing: 2px;
+}

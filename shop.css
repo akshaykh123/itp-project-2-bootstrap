@@ -1,0 +1,70 @@
+/**********************
+      breadcrumb
+**********************/
+#breadcrumb a {
+  text-decoration: none;
+  color: #ffc000;
+}
+
+/**********************
+        banner
+**********************/
+#banner {
+  background: linear-gradient(to bottom, rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4) 100%), url("images/banner-shop.webp");
+  background-size: cover;
+  background-position: center;
+}
+
+#banner .wrapper {
+  min-height: 350px;
+}
+
+#banner .wrapper h3 {
+  font-size: 36px;
+  font-weight: 700;
+  color: #fff;
+}
+
+/**********************
+      collections
+**********************/
+#collections .card-img-overlay {
+  background: #00000060;
+}
+
+/* for hover effect */
+#collections .card-img-overlay .card-title {
+  transform: translateY(25px);
+  transition: all 1s ease;
+}
+#collections .card-img-overlay:hover .card-title {
+  transform: translateY(0);
+  transition: all 1s ease;
+}
+
+#collections .card-img-overlay .item-count {
+  transform: translateY(25px);
+  transition: all 1s ease;
+  opacity: 0;
+}
+
+#collections .card-img-overlay:hover .item-count {
+  transform: translateY(0);
+  transition: all 1s ease;
+  opacity: 1;
+}
+/* hover effect end */
+
+#collections .card-img-overlay .card-title {
+  word-break: break-word;
+}
+
+@media only screen and (min-width: 426px) and (max-width: 768px) {
+  #collections .card-img-overlay .card-title {
+    font-size: 16px;
+  }
+
+  #collections .card-img-overlay .item-count {
+    font-size: 13px;
+  }
+}

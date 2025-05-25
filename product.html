@@ -1,0 +1,680 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Product</title>
+    <link rel="icon" href="images/favicon.png" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.6/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-4Q6Gf2aSP4eDXB8Miphtr37CMZZQ5oXLH2yaXMJ2w8e2ZtHTl7GptT4jmndRuHDT"
+      crossorigin="anonymous"
+    />
+
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="product.css" />
+
+    <!-- font awesome cdn -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
+      integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+
+    <!-- google font => manrope -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- swiper cdn -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
+    <style>
+      /* .swiper {
+        width: 600px;
+        height: 300px;
+      } */
+    </style>
+  </head>
+  <body>
+    <!-- swiper script -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+    <header>
+      <div id="announcement-bar">
+        <div class="container">
+          <div class="scroll-container">
+            <span class="scrolling-text text-white fw-bold">
+              <span class="first"
+                >Get 15% off your first purchase when you sign up for our
+                newsletter.</span
+              >
+              <span
+                >Enjoy 20% off your entire order with the code SHOEFRESH20</span
+              >
+            </span>
+          </div>
+        </div>
+      </div>
+
+      <div id="top-header" class="py-2">
+        <div class="container">
+          <div class="row">
+            <div class="col-12 col-md-6 text-center text-md-start">
+              <p class="m-0">One Day Delivery Available</p>
+            </div>
+            <div class="col-12 col-md-6 text-end">
+              <div
+                class="social-media d-flex justify-content-center justify-content-md-end align-items-center gap-3"
+              >
+                <a href="#">Login / Register</a>
+                <i class="fab fa-facebook-f"></i>
+                <i class="fab fa-twitter"></i>
+                <i class="fab fa-instagram"></i>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div id="bottom-header" class="py-4">
+        <div class="container">
+          <div class="row">
+            <nav class="navbar navbar-expand-lg">
+              <div class="container-fluid">
+                <a class="navbar-brand col" href="index.html">
+                  <img src="images/logo.jpg" alt="logo" class="img-fluid" />
+                </a>
+                <button
+                  class="navbar-toggler"
+                  type="button"
+                  data-bs-toggle="collapse"
+                  data-bs-target="#navbarSupportedContent"
+                  aria-controls="navbarSupportedContent"
+                  aria-expanded="false"
+                  aria-label="Toggle navigation"
+                >
+                  <span class="navbar-toggler-icon"></span>
+                </button>
+                <div
+                  class="collapse navbar-collapse"
+                  id="navbarSupportedContent"
+                >
+                  <ul class="navbar-nav me-auto mb-2 mb-lg-0 column-gap-2">
+                    <li class="nav-item">
+                      <a class="nav-link" aria-current="page" href="index.html"
+                        >Home</a
+                      >
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" href="shop.html">Shop</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link active" href="product.html">Product</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" href="about.html">About Us</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" href="contact.html">Contact Us</a>
+                    </li>
+                  </ul>
+                  <!-- <form class="d-flex" role="search">
+                    <input
+                      class="form-control me-2"
+                      type="search"
+                      placeholder="Search"
+                      aria-label="Search"
+                    />
+                    <button class="btn btn-outline-success" type="submit">
+                      Search
+                    </button>
+                  </form> -->
+                </div>
+              </div>
+            </nav>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <main>
+      <section id="breadcrumb">
+        <div class="container">
+          <nav aria-label="breadcrumb">
+            <ol class="breadcrumb">
+              <li class="breadcrumb-item"><a href="index.html">Home</a></li>
+              <li class="breadcrumb-item active" aria-current="page">
+                Product
+              </li>
+            </ol>
+          </nav>
+        </div>
+      </section>
+      <!-- end of breadcrumb -->
+
+      <section id="product-container" class="container">
+        <div class="row">
+          <div class="col-12 col-md-6">
+            <!-- <div class="row"> -->
+
+            <!-- https://github.com/emetdas/Youtube-code/tree/master/web%20components/thumbnail-slider -->
+            <!-- swiper slider -->
+            <div class="swiper mySwiper2">
+              <div class="swiper-wrapper main">
+                <div class="swiper-slide">
+                  <img
+                    src="images/product-img-1.webp"
+                    alt="Image"
+                    class="img-fluid"
+                  />
+                </div>
+                <div class="swiper-slide">
+                  <img
+                    src="images/product-img-2.webp"
+                    alt="Image"
+                    class="img-fluid"
+                  />
+                </div>
+                <div class="swiper-slide">
+                  <img
+                    src="images/product-img-3.webp"
+                    alt="Image"
+                    class="img-fluid"
+                  />
+                </div>
+                <div class="swiper-slide">
+                  <img
+                    src="images/product-img-4.webp"
+                    alt="Image"
+                    class="img-fluid"
+                  />
+                </div>
+                <div class="swiper-slide">
+                  <img
+                    src="images/product-img-5.webp"
+                    alt="Image"
+                    class="img-fluid"
+                  />
+                </div>
+              </div>
+              <div class="swiper-button-next"></div>
+              <div class="swiper-button-prev"></div>
+            </div>
+            <div thumbsSlider="" class="swiper mySwiper thumbnail-slider">
+              <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                  <img
+                    src="images/product-thumb-1.webp"
+                    alt="Image"
+                    class="img-fluid"
+                  />
+                </div>
+                <div class="swiper-slide">
+                  <img
+                    src="images/product-thumb-2.webp"
+                    alt="Image"
+                    class="img-fluid"
+                  />
+                </div>
+                <div class="swiper-slide">
+                  <img
+                    src="images/product-thumb-3.webp"
+                    alt="Image"
+                    class="img-fluid"
+                  />
+                </div>
+                <div class="swiper-slide">
+                  <img
+                    src="images/product-thumb-4.webp"
+                    alt="Image"
+                    class="img-fluid"
+                  />
+                </div>
+                <div class="swiper-slide">
+                  <img
+                    src="images/product-thumb-5.webp"
+                    alt="Image"
+                    class="img-fluid"
+                  />
+                </div>
+              </div>
+            </div>
+            <!-- swiper slider end -->
+            <!-- </div> -->
+          </div>
+          <div class="col-12 col-md-6">
+            <div class="text-center text-md-start">
+              <h2 class="product-name">Waterproof Hiking Boots</h2>
+              <p class="product-price">$25.00</p>
+            </div>
+            <hr />
+            <div class="d-flex justify-content-evenly d-md-block">
+              <a
+                href="#"
+                class="btn btn-primary cart-btn bg-danger border-danger me-md-3"
+                >ADD TO CART</a
+              >
+              <a href="#" class="btn btn-primary buy-btn">BUY IT NOW</a>
+            </div>
+            <br />
+            <!-- wishlist btn -->
+            <div class="text-center text-md-start">
+              <a href="#" class="btn wishlist-btn">
+                <i class="far fa-heart"></i>
+                Add to wishlist
+              </a>
+            </div>
+            <br />
+            <table class="table table-borderless">
+              <tbody>
+                <tr>
+                  <td>Vendor :</td>
+                  <td>TrailGear</td>
+                </tr>
+                <tr>
+                  <td>Type :</td>
+                  <td>Hiking Boots</td>
+                </tr>
+                <tr>
+                  <td>SKU :</td>
+                  <td>123456</td>
+                </tr>
+                <tr>
+                  <td>Available :</td>
+                  <td>Available</td>
+                </tr>
+              </tbody>
+            </table>
+            <div class="accordion" id="accordionParent">
+              <div class="accordion-item">
+                <h2 class="accordion-header">
+                  <button
+                    class="accordion-button"
+                    type="button"
+                    data-bs-toggle="collapse"
+                    data-bs-target="#shipping-info"
+                  >
+                    Shipping Info
+                  </button>
+                </h2>
+                <div
+                  id="shipping-info"
+                  class="accordion-collapse collapse"
+                  data-bs-parent="#accordionParent"
+                >
+                  <div class="accordion-body">
+                    <p>- No EU import duties.</p>
+                    <p>- Ships within 1-2 business days.</p>
+                    <p>
+                      - Ships in our fully recyclable and biodegradable
+                      signature boxes.
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <div class="accordion-item">
+                <h2 class="accordion-header">
+                  <button
+                    class="accordion-button"
+                    type="button"
+                    data-bs-toggle="collapse"
+                    data-bs-target="#care-guide"
+                  >
+                    Care Guide
+                  </button>
+                </h2>
+                <div
+                  id="care-guide"
+                  class="accordion-collapse collapse"
+                  data-bs-parent="#accordionParent"
+                >
+                  <div class="accordion-body">
+                    <p>
+                      Regular care. Use a slightly damp, soft and lint-free
+                      cloth for regular dust removal. Always clean in the
+                      direction of the grain.
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="salepoint mt-3">
+              <p><i class="fab fa-envira"></i> 55% Linen, 45% Rayon</p>
+              <p><i class="fas fa-lock"></i> 100% Secure Payment</p>
+              <p><i class="fas fa-shield-alt"></i> 2 Year Warranty</p>
+            </div>
+            <div>
+              <p>
+                <i class="far fa-eye"></i> 20 Customers are viewing this product
+              </p>
+              <p><i class="fas fa-fire"></i> 30 Sold in the last 24 hours</p>
+              <p>
+                <i class="fas fa-shipping-fast"></i> Spend Rs.1000 to get free
+                shipping
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="description-tabs" class="container my-5">
+        <ul class="nav nav-underline" id="myTab" role="tablist">
+          <li class="nav-item" role="presentation">
+            <button
+              class="nav-link active text-dark"
+              id="desc-tab"
+              data-bs-toggle="tab"
+              data-bs-target="#desc-tab-pane"
+              type="button"
+              role="tab"
+              aria-controls="desc-tab-pane"
+              aria-selected="true"
+            >
+              Description
+            </button>
+          </li>
+          <li class="nav-item" role="presentation">
+            <button
+              class="nav-link text-dark"
+              id="material-tab"
+              data-bs-toggle="tab"
+              data-bs-target="#material-tab-pane"
+              type="button"
+              role="tab"
+              aria-controls="material-tab-pane"
+              aria-selected="false"
+            >
+              Material
+            </button>
+          </li>
+          <li class="nav-item" role="presentation">
+            <button
+              class="nav-link text-dark"
+              id="reviews-tab"
+              data-bs-toggle="tab"
+              data-bs-target="#reviews-tab-pane"
+              type="button"
+              role="tab"
+              aria-controls="reviews-tab-pane"
+              aria-selected="false"
+            >
+              Reviews
+            </button>
+          </li>
+        </ul>
+        <div class="tab-content" id="myTabContent">
+          <div
+            class="tab-pane fade show active"
+            id="desc-tab-pane"
+            role="tabpanel"
+            aria-labelledby="desc-tab"
+            tabindex="0"
+          >
+            Integer ante arcu, accumsan a, consectetuer eget, posuere ut,
+            mauris. Praesent adipiscing. Phasellus ullamcorper ipsum rutrum
+            nunc. Nunc nonummy metus. Vestibulum volutpat pretium libero. Cras
+            id dui. Aenean ut eros et nisl sagittis vestibulum. Nullam nulla
+            eros, ultricies sit amet, nonummy id, imperdiet feugiat, pede. Sed
+            lectus. Donec mollis hendrerit risus. Phasellus nec sem in justo
+            pellentesque facilisis. Etiam imperdiet imperdiet orci. Nunc nec
+            neque. Phasellus leo dolor, tempus non, auctor et, hendrerit quis,
+            nisi. Curabitur ligula sapien, tincidunt non, euismod vitae, posuere
+            imperdiet, leo. Maecenas malesuada. Praesent congue erat at massa.
+            Sed cursus turpis vitae tortor. Donec posuere vulputate arcu.
+            Phasellus accumsan cursus velit. Vestibulum ante ipsum primis in
+            faucibus orci luctus et ultrices posuere cubilia Curae; Sed aliquam,
+            nisi quis porttitor congue, elit erat euismod orci, ac placerat
+            dolor lectus quis orci. Phasellus consectetuer vestibulum elit.
+            Aenean tellus metus, bibendum sed, posuere ac, mattis non, nunc.
+            Vestibulum fringilla pede sit amet augue. In turpis. Pellentesque
+            posuere.
+          </div>
+          <div
+            class="tab-pane fade"
+            id="material-tab-pane"
+            role="tabpanel"
+            aria-labelledby="material-tab"
+            tabindex="0"
+          >
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptate
+            exercitationem doloribus soluta laboriosam eum veniam, nam ducimus
+            voluptates ad ab quae, numquam, corporis minima itaque impedit
+            accusantium. Nemo impedit recusandae quas earum necessitatibus
+            sapiente repellendus consequuntur, at voluptates pariatur ducimus
+            facere voluptatibus velit, eaque rerum dolorem provident incidunt
+            optio labore.
+          </div>
+          <div
+            class="tab-pane fade"
+            id="reviews-tab-pane"
+            role="tabpanel"
+            aria-labelledby="reviews-tab"
+            tabindex="0"
+          >
+            Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+            Exercitationem libero rem inventore cum facere sed totam,
+            perferendis fuga maiores incidunt ipsum consectetur ex fugiat
+            nesciunt explicabo pariatur tempore illum minus similique
+            aspernatur, corrupti distinctio perspiciatis? Excepturi dolorum
+            mollitia hic eveniet. Aliquam, commodi assumenda. Dolores totam
+            obcaecati culpa, temporibus quasi voluptas?
+          </div>
+        </div>
+      </section>
+
+      <section id="chic" class="container-fluid px-0">
+        <div class="card text-bg-dark position-relative rounded-0 border-0">
+          <img
+            src="images/chic-bg-imagewebp.webp"
+            class="card-img rounded-0"
+            alt="img"
+          />
+          <div
+            class="bg-custom-overlay position-absolute top-0 start-0 w-100 h-100 bg-dark bg-opacity-25"
+          ></div>
+          <div
+            class="card-img-overlay text-center d-flex flex-column justify-content-center align-items-center gap-2 gap-md-3"
+          >
+            <p class="card-subtitle">Effortless Fashion, Every Day</p>
+            <h5 class="card-title m-0">Chic Styles for the Modern Woman</h5>
+            <p class="card-text">
+              Embrace effortless elegance with our curated collection of chic
+              styles designed for the modern woman.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <section id="faq" class="container py-5">
+        <div class="text-center">
+          <h2>FAQ's</h2>
+          <p>Have a question? We are here to help.</p>
+        </div>
+        <div class="accordion" id="faqAccordion">
+          <div class="accordion-item">
+            <h2 class="accordion-header">
+              <button
+                class="accordion-button collapsed"
+                type="button"
+                data-bs-toggle="collapse"
+                data-bs-target="#collapseOne"
+                aria-expanded="false"
+                aria-controls="collapseOne"
+              >
+                <b>Is the shipping free?</b>
+              </button>
+            </h2>
+            <div
+              id="collapseOne"
+              class="accordion-collapse collapse"
+              data-bs-parent="#faqAccordion"
+            >
+              <div class="accordion-body">
+                <p>Yes. Worldwide shipping is already included in the price. We use DHL express with 3 days delivery time.</p>
+              </div>
+            </div>
+          </div>
+          <div class="accordion-item">
+            <h2 class="accordion-header">
+              <button
+                class="accordion-button collapsed"
+                type="button"
+                data-bs-toggle="collapse"
+                data-bs-target="#collapseTwo"
+                aria-expanded="false"
+                aria-controls="collapseTwo"
+              >
+                <b>When will I receive my item?</b>
+              </button>
+            </h2>
+            <div
+              id="collapseTwo"
+              class="accordion-collapse collapse"
+              data-bs-parent="#faqAccordion"
+            >
+              <div class="accordion-body">
+                <p>When we have received your order, you will automatically receive an e-mail confirming your order. Orders made before 2 PM (CET) will be picked, packed and shipped the same day. Delivery time is usually 2-4 working days with DHL Express.</p>
+              </div>
+            </div>
+          </div>
+          <div class="accordion-item">
+            <h2 class="accordion-header">
+              <button
+                class="accordion-button collapsed"
+                type="button"
+                data-bs-toggle="collapse"
+                data-bs-target="#collapseThree"
+                aria-expanded="false"
+                aria-controls="collapseThree"
+              >
+                <b>Can I change or return my item?</b>
+              </button>
+            </h2>
+            <div
+              id="collapseThree"
+              class="accordion-collapse collapse"
+              data-bs-parent="#faqAccordion"
+            >
+              <div class="accordion-body">
+                <p>If you want to change a product into another model, strap color etc., please contact us so we are able to reserve the new item in our stock immediately. You are always entitled to an exchange or refund within 30 days after you have received your package, as long as the item has not been used.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="pt-5">
+      <div class="container top-footer">
+        <div class="row text-center row-gap-2">
+          <div class="col-12 col-md">
+            <h3>INFORMATION</h3>
+            <ul type="none" class="p-0">
+              <li><a href="#">About Us</a></li>
+              <li><a href="#">Privacy Policy</a></li>
+              <li><a href="#">Returns Policy</a></li>
+              <li><a href="#">Shipping Policy</a></li>
+              <li><a href="#">Terms & Conditions</a></li>
+            </ul>
+          </div>
+          <div class="col-12 col-md">
+            <h3>QUICK LINKS</h3>
+            <ul type="none" class="p-0">
+              <li><a href="#">My Account</a></li>
+              <li><a href="#">My Cart</a></li>
+              <li><a href="#">Size Chart</a></li>
+              <li><a href="#">Wishlist</a></li>
+              <li><a href="#">Gift Card</a></li>
+            </ul>
+          </div>
+          <div class="col-12 col-md">
+            <div class="logo-wrapper mb-2 mb-md-4">
+              <img src="images/logo.jpg" class="img-fluid" alt="img" />
+            </div>
+            <div class="text-wrapper">
+              <p>T: + (08) 9055 0269</p>
+              <p>E: example@example.com</p>
+              <p>50 Porana Place, West Casuarinas,</p>
+              <p>Western Australia, Australia.</p>
+            </div>
+          </div>
+          <div class="col-12 col-md">
+            <h3>CATEGORIES</h3>
+            <ul type="none" class="p-0">
+              <li><a href="#">Athletic Footwear</a></li>
+              <li><a href="#">Boots for Every Occasion</a></li>
+              <li><a href="#">Luxury Leather Shoes</a></li>
+              <li><a href="#">Sandals & Slides</a></li>
+              <li><a href="#">Sneakerhead's Haven</a></li>
+            </ul>
+          </div>
+          <div class="col-12 col-md">
+            <h3>SUPPORT</h3>
+            <ul type="none" class="p-0">
+              <li><a href="#">Contact Us</a></li>
+              <li><a href="#">Newsletter</a></li>
+              <li><a href="#">Gift Cards</a></li>
+              <li><a href="#">Sign In</a></li>
+              <li><a href="#">My Account</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <div
+        class="container-fluid py-3 bottom-footer border border-0 border-top"
+      >
+        <div class="row">
+          <div class="col-12 text-center">
+            Copyright © 2024 Shooz. All rights reserved
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.6/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-j1CDi7MgGQ12Z7Qab0qlWQ/Qqz24Gc6BM0thvEMVjHnfYGF0rmFCozFSxQBxwHKO"
+      crossorigin="anonymous"
+    ></script>
+
+    <script>
+      var swiper = new Swiper(".mySwiper", {
+        loop: true,
+        spaceBetween: 10,
+        slidesPerView: 5,
+        freeMode: true,
+      });
+      var swiper2 = new Swiper(".mySwiper2", {
+        loop: true,
+        spaceBetween: 10,
+        navigation: {
+          nextEl: ".swiper-button-next",
+          prevEl: ".swiper-button-prev",
+        },
+        thumbs: {
+          swiper: swiper,
+        },
+
+        // autoHeight: true,
+        // parallax: true,
+        // autoplay: {
+        //   delay: 3000,
+        // },
+        // direction: "horizontal",
+        // effect: "coverflow",
+        // effect: "cube",
+        effect: "flip",
+        // effect: "cards",
+      });
+    </script>
+  </body>
+</html>

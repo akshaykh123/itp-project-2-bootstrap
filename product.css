@@ -1,0 +1,52 @@
+/**********************
+      breadcrumb
+**********************/
+#breadcrumb a {
+  text-decoration: none;
+  color: #ffc000;
+}
+
+#product-container {
+  overflow: hidden;
+}
+
+/**********************
+      chic
+**********************/
+#chic .card-subtitle {
+  text-transform: uppercase;
+  font-size: 12px;
+}
+
+#chic .card-title {
+  text-transform: capitalize;
+  font-weight: 700;
+}
+
+#chic .card-text {
+  line-height: normal;
+}
+
+#chic .card img {
+  min-height: 200px;
+  object-fit: cover;
+}
+
+@media only screen and (min-width: 768px) {
+  #chic .card-text {
+    max-width: 50%;
+  }
+
+  #chic .card-subtitle {
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    /* font-size: 12px; */
+    font-weight: 600;
+  }
+
+  #chic .card-title {
+    text-transform: capitalize;
+    font-size: 36px;
+    font-weight: 700;
+  }
+}
